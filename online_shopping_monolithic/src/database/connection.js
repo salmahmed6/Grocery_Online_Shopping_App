@@ -8,19 +8,8 @@ module.exports = async () => {
             useNewUrlParser: true,
             useUnifiedTopology: true
         });
-        console.log('DataBase connected');
-        try {
-            await mongoose.connect(DB_URL, {
-                useNewUrlParser: true,
-                useUnifiedTopology: true
-            });
-            console.log('Db Connected');
+        console.log('Database connected');
 
-        } catch (error) {
-            console.log('Error ============')
-            console.log(error);
-            process.exit(1);
-        }
     } catch (error) {
         console.log('Error ============')
         console.log(error);
